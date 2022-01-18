@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Days Of React Challenge</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            line-height: 1.5;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            color: black;
+        }
+
+        .root {
+            min-height: 100%;
+            position: relative;
+        }
+
+        .header-wrapper,
+        .main-wrapper,
+        .footer-wrapper {
+            width: 85%;
+            margin: auto;
+        }
+
+        .header-wrapper,
+        .main-wrapper {
+            padding: 10px;
+            margin: 2px auto;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-weight: 300;
+        }
+
+        h2,
+        h3 {
+            font-weight: 300;
+        }
+
+        header {
+            background-color: #61dbfb;
+            padding: 25;
+            padding: 10px;
+        }
+
+        main {
+            padding: 10px;
+            padding-bottom: 60px;
+            /* Height of the footer */
+        }
+
+        ul {
+            margin-left: 15px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            /* Height of the footer */
+            background: #6cf;
+        }
+
+        .footer-wrapper {
+            font-weight: 400;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // console.log(React)
+        const rootElement = document.querySelector('.root') //lấy elem root từ HTML doc
+        //elem JSX
+        // const jsxElement = <h1>I am an JSX element</h1>
+
+
+        // cách 1 để add styles
+        // const headerStyles = {
+        //     backgroundColor: '#61DBFB',
+        //     fontFamily: 'Helvetica Neue',
+        //     padding: 25,
+        //     lineHeight: 1.5
+        // }
+
+        const welcome = 'Welcome to 30 Days Of React'
+        const title = 'Getting Started React'
+        const subtitle = 'JavaScript Library'
+        const author = {
+            firstName: 'hd',
+            lastName: 'V',
+        }
+        const date = 'Oct 2, 2020'
+
+        //JSX elem, header
+        const header = (
+            <header /*style={headerStyles}*/ /*style={{ border: '2px solid orange', color: 'black', fontSize: '18px' }} Cách 2 để add style cho 1 elem*/>
+                <div className='header-wrapper'>
+                    <h1>{welcome}</h1>
+                    <h2>{title}</h2>
+                    <h3>{subtitle}</h3>
+                    <p>Name: {author.firstName} {author.lastName}</p>
+                    <small>Date: {date}</small>
+                </div>
+            </header>
+        )
+
+        const yearBorn = 2000
+        const currentYear = new Date().getFullYear()
+        const age = currentYear - yearBorn
+        const personAge = (
+            <p>
+                {' '}
+                {author.firstName} {author.lastName} hiện {age} tuổi.
+            </p>
+        )
+
+        //JSX elem, main
+        // const mainStyles = {
+        //     backgroundColor: '#F3F0F5'
+        // }
+
+        const techs = ['HTML', 'CSS', 'JavaScript']
+        const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
+
+        const main = (
+            <main /*style={mainStyles}*/>
+                <div className='main-wrapper'>
+                    <p>
+                        Hãy chuẩn bị kiến thức về các công nghệ này trước khi học{' '}
+                        <strong>
+                            <em>react.js</em>
+                        </strong>
+                        :
+                    </p>
+                    <ul>
+                        {techsFormatted}
+                    </ul>
+                    {personAge}
+                </div>
+            </main>
+        )
+
+        //JSX elem, footer
+        // const footerStyles = {
+        //     backgroundColor: '#61DBFB',
+        // }
+        const footer = (
+            <footer /*style={footerStyles}*/>
+                <div className='footer-wrapper'>
+                    <p>Copyright 2022</p>
+                </div>
+            </footer>
+        )
+
+        //JSX elem, app, container của cáo elem trc
+        const app = (
+            <div className='app'>
+                {header}
+                {main}
+                {footer}
+            </div>
+        )
+
+        //sử dụng package ReactDOM để render JSX elem. ReactDOM lấy 2 arguments là JSX elem và doc root 
+        ReactDOM.render(app, rootElement)
+
+    </script>
+</body>
+
+</html>

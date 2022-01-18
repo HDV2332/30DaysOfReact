@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="root"></div>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const rootElement = document.querySelector('.root')
+
+        const user = {
+            firstName: 'hd',
+            lastName: 'V',
+            country: 'VN',
+            title: 'Intern',
+            gender: 'male',
+            email: 'hdv@mail.com',
+            phoneNumber: 0123456,
+        }
+
+        const styleGetInfo = {
+            fontFamily: 'Consolas',
+            paddingTop: 0,
+            paddingBottom: 20,
+            lineHeight: 1.5,
+            backgroundColor: 'white'
+        }
+        const getInfo = (
+            <div style={styleGetInfo} >
+                <div>
+                    <h1>Name: {user.firstName} {user.lastName}</h1>
+                    <p>{user.country}</p>
+                    <p>{user.title}</p>
+                    <p>{user.gender}</p>
+                    <p>{user.email}</p>
+                    <p>{user.phoneNumber}</p>
+                </div>
+            </div>
+        )
+        
+        const styleFooter = {
+            position: 'absolute',
+            bottom: 50,
+            width: 100,
+            height: '20px',
+            fontWeight: 400,
+            textAlign: 'center'
+        }
+        const footer = (
+            <footer style={styleFooter}>
+                <div>
+                    <p>This is a footer WooHoo</p>
+                </div>
+            </footer>
+        )
+        const styleApp = {
+            backgroundColor: 'lightgray'
+        }
+
+        const app = (
+            <div style={styleApp}>
+                <div>
+                    {getInfo}
+                    {footer}
+                </div>
+            </div>
+        )
+
+        ReactDOM.render(app, rootElement)
+    </script>
+</body>
+
+</html>

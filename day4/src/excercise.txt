@@ -1,0 +1,17 @@
+1.What is the difference between a regular function and an arrow function?
+this value inside a regular function is dynamic and depends on the invocation. 
+But this inside the arrow function is bound lexically and equals to this of the outer function.
+arguments object inside the regular functions contains the list of arguments. 
+The arrow function, on the opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest parameter ...args).
+If the arrow function has one expression, then the expression is returned implicitly, even without using the return keyword.
+2.What is a React Component?
+A React component is a small, reusable code, which is responsible for one part of the application UI. 
+A React application is an aggregation of components. React can help us to build reusable components.
+3.How do you make a React functional component?
+It takes parameters and we can change the action text dynamically.
+4.What is the difference between a pure JavaScript function and a functional component?
+A functional component is just a plain JavaScript function that accepts props as an argument and returns a React element.
+5.How small is a React component?
+can be just a HTML button element
+6.Can we make a button or input field component?
+Yes

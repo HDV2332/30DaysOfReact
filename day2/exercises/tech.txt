@@ -1,0 +1,57 @@
+Exercises: What is React?
+    What is React?
+React is a JavaScript library for building a reusable user interface(UI). It was initially released on May 29, 2013.
+    What is a library?
+A collection of prewritten code snippets that can be used and reused to perform common JavaScript functions. 
+A particular JavaScript library code can be plugged into the rest of your project’s code on an as-needed basis.
+    What is a single page application?
+a SPA is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, 
+instead of the default method of a web browser loading entire new pages.
+    What is a component ?
+Components are independent and reusable bits of code. 
+They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+    What is the latest version of React?
+17.0.2
+    What is DOM?
+Document Object Model
+    What is React Virtual DOM?
+React uses its virtual DOM to make new changes and it updates only the element, that needs changing. 
+Do not directly interact with DOM when you build a React Application and leave the DOM manipulation job for the React virtual DOM
+    What does a web application or a website(composed of) have?
+A web browser (or client), a web application server, and a database server.
+
+
+Exercises: Why React?
+    Why did you chose to use react?
+fast
+modular
+scalable
+flexible
+big community and popular
+open source
+High job opportunity
+    What measures do you use to know popularity ?
+Git repository stars, watchers and forks. Online discussions.
+    What is more popular, React or Vue ?
+By that standard, Vue is a ahead of React with 10 thousands more stars on Github
+
+Exercises: JSX
+    What is an HTML element?
+An HTML element is a type of HTML document component, one of several types of HTML nodes. 
+HTML document is composed of a tree of simple HTML nodes, such as text nodes, and HTML elements, which add semantics and formatting to parts of document. 
+    How to write a self closing HTML element?
+add / before the closing > (<'name'/>)
+    What is an HTML attribute? Write some of them
+HTML attributes are special words used inside the opening tag to control the element's behaviour.
+href : specifies hyperlink
+src: specifies the path 
+width & height : specifies dimensions
+alt: specifies an alternative
+    What is JSX?
+JSX stands for JavaScript XML. JSX allows us to write HTML elements with JavaScript code. 
+    What is babel?
+Babel is a library which transpiles JSX to pure JavaScript and latest JavaScript to older version. 
+    What is a transpiler?
+transpiler or source-to-source compilers, are tools that read source code written in one programming language 
+and produce the equivalent code in another language.
+
