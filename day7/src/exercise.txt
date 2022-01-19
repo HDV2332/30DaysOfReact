@@ -1,0 +1,23 @@
+    1.How do you write a pure JavaScript function
+Pure Function is a function (a block of code ) that always returns the same result if the same arguments are passed
+    2.What is inheritance and how do you make a child from a parent class?
+In the classical inheritance, methods from base class get copied into derived class.
+*inheriting from the parent:
+class Child extends Component {
+  constructor(props) {
+    super(props)
+  }
+}
+    3.What is class based React component ?
+Class based React component is a child of React.Component and it has a built-in render method and it may have a constructor.
+    4.What is the difference between functional React component and class based React component ?
+A functional component is just a plain JavaScript function that accepts props as an argument and returns a React element.
+A class component requires you to extend from React. Component and create a render function which returns a React element.
+    5.When do we need to use class based components instead of functional components
+Because they're lightweight, writing these simple components as functional components is pretty standard.
+If the components need more functionality, like keeping state, use classes instead.
+    6.What is the use cases of class based component ?
+Class-based components are slightly slower than their functional counterparts. The difference is very small and is almost negligible for smaller web apps – 
+though the performance difference increases when the number of components in the app increases. 
+    7.Which type of component do use most frequently ? functional or class-based component
+functional component
