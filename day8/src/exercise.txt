@@ -1,0 +1,11 @@
+    1.What was your state today? Are you happy? I hope so. If you manage to make it this far you should be happy.
+I'm alright, eager to learn more abt React
+    2.What is state in React ?
+State is an object in react which let the component re-render when state data changes.
+    3.What is the difference between props and state in React ?
+Props are used to pass data from one component to another. 
+The state is a local data storage that is local to the component only and cannot be passed to other components
+    4.How do you access state in a React component ?
+using this.state and the property name
+    5.How do you set a set in a React component ?
+To set the state we use react method this.setState
