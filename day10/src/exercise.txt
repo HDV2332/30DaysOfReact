@@ -1,0 +1,12 @@
+    1.What is the importance of React Folder Structure and File Naming
+Scalability,maintainability, ease of working on files and easy to understand structure.
+    2.How do you export file
+Add the keyword export before let or const to make a named export.
+    3.How do you import file
+//* index.js
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { App } from './App'
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)

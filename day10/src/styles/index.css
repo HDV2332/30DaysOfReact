@@ -1,0 +1,36 @@
+@import './verified-user-styles/name-styles.css';
+@import './verified-user-styles/verified-user-styles.css';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.user-info-container-styles {
+  display: flex;
+  flex-direction: column;
+  font-weight: light;
+}
+
+div .image-wrapper ,.extra-user-infos, .button-wrapper, .numbox-description{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.numbox-app-styles {
+  padding: 0px 50px 50px 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+

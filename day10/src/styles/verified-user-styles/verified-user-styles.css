@@ -1,0 +1,9 @@
+.verified-user-styles  {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
