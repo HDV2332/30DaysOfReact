@@ -1,0 +1,51 @@
+    1.What is an event?
+An event is an action or occurrence recognized by a software.
+
+    2.What is the different between an HTML element event and React event?
+- React events are named using camelCase, rather than lowercase.
+- With JSX you pass a function as the event handler, rather than a string.
+- You cannot return false to prevent default behavior in React. You must call preventDefault explicitly.
+
+    3.Write at least 4 keyboard events?
+keydown: A key has been pressed.
+keyup: A key has been released.
+keypress: This event is fired when an alphabetic, numeric, or punctuation key is pressed down.
+location: Returns the location of a key on the keyboard or device.
+
+    4.Write at least 8 mouse events?
+onclick: The event occurs when the user clicks on an element
+oncontextmenu: The event occurs when the user right-clicks on an element to open a context menu
+ondblclick: The event occurs when the user double-clicks on an element
+onmousedown: The event occurs when the user presses a mouse button over an element
+onmouseenter: The event occurs when the pointer is moved onto an element
+onmouseleave: The event occurs when the pointer is moved out of an element
+onmousemove: The event occurs when the pointer is moving while it is over an element
+onmouseout: The event occurs when a user moves the mouse pointer out of an element, or out of one of its children
+
+    5.What are the most common mouse and keyboard events?
+keydown and onclick
+
+    6.Write an event specific to input element?
+handleChange = ()=>{
+    this.setState({})
+}
+...
+<input onChange={this.handleChange}/>
+
+    7.Write an event specific to form element?
+handleSubmit = (e)=>{
+    e.preventDefault();
+}
+...
+<form onSubmit={this.handleSubmit}>
+    <input onChange={this.handleChange}/>
+</form>
+    8.Display the coordinate of the view port when a mouse is moving on the body?
+clientX provides the horizontal coordinate within the application's viewport at which the event occurred (as opposed to the coordinate within the page).
+clientY provides the vertical coordinate within the application's viewport at which the event occurred (as opposed to the coordinate within the page).
+    9.What is the difference between onInput, onChange and onBlur?
+onInput: fired when it text.
+onChange: fired when the input loses focus but ONLY if it is not empty.
+onBlur: fired when the input loses focus doesn't matter if it has a value or not.
+    10.Where do we put the onSubmit event ?
+inside form tag
