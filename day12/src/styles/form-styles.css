@@ -1,0 +1,33 @@
+.form-group {
+    display: grid;
+    grid-template-columns: 15% 30% 10% 30%;
+    margin: 0px 10px 10px 10px;
+    align-items: center;
+}
+
+.form-country {
+    display: grid;
+    grid-template-columns: 15% 0% 15% 25% 30%;
+    margin: 0px 10px 10px 10px;
+    align-items: center;
+}
+
+.form-gender, .form-skills {
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    margin: 10px;
+    align-items: center;
+}
+.form-bio-textarea{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.form-file {
+    margin: 10px 10px 10px 10px;
+}
+
+.form-button{
+    padding: 5px ;
+    display: flex;
+    justify-content: center;
+}

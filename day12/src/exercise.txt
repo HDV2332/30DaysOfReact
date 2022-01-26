@@ -1,0 +1,56 @@
+    1.What is the importance of form?
+Form is used to collect data from a user. 
+Once in a while we use form to fill our information on a paper or on a website.
+
+    2.How many input types do you know?
+text, number, range, email, password, tel, checkbox, radio, color, url, image, file, etc..
+
+    3.Mention at least four attributes of an input element
+maxlength, min, multiple, src
+
+    4.What is the importance of htmlFor?
+it returns the value of the for attribute of a label.
+
+    5.Write an input type which is not given in the example if there is?
+all have been listed in the examples.
+
+    6.What is a controlled input?
+an input that gets its value from a single source of truth.
+
+    7.What do you need to write a controlled input?
+an input field, event listener (onChange) and state to get data from a controlled input. 
+
+    8.What event type do you use to listen changes on an input field?
+onChange.
+
+    9.What is the value of a checked checkbox?
+true
+
+    10.When do you use onChange, onBlur, onSubmit?
+onChange: fired when the input loses focus but ONLY if it is not empty.
+onBlur: fired when the input loses focus doesn't matter if it has a value or not.
+onSubmit: fires when the user submits a form.
+
+    11.What is the purpose of writing e.preventDefault() inside the submit handler method?
+tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
+
+    12.How do you bind data in React? The first input field example is data binding in React.
+  handleChange = (e) => {
+    const value = e.target.value
+    this.setState({ firstName: value })
+  }
+  ...
+  render(){
+      return(
+          <input onChange={this.handleChange}/>
+      )
+  }
+
+    13.What is validation?
+The action or process of checking or proving the validity or accuracy of something in this case data.
+
+    14.What is the event type you use to listen when an input changes?
+onChange.
+
+    15.What are event types do you use to validate an input?
+onSubmit.
