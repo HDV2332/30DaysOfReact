@@ -1,0 +1,36 @@
+    1.What is a controlled input?
+an input that gets its value from a single source of truth.
+
+    2.What is an uncontrolled input
+an input that gets its value from input fields like traditional HTML form data handling.
+
+    3.How do you get a content of a certain HTML element in React ?
+use ref
+<input id='firstName' name='firstName' ref={this.firstName}/>
+
+    4.Why it is not a good idea to touch the DOM directly in React ?
+because performing certain operations can be very slow/costly depending on how you do them depends on where/when you target the DOM.
+"When you touch the DOM in any way, you set a dirty bit on the whole tree that tells the browser it needs to figure 
+out where everything goes again. 
+When JS hands control back to the browser, it invokes its layout algorithm (or more technically, 
+it invokes its CSS recalc algorithm, then layout, then repaint, then re-compositing) to redraw the screen."
+
+    5.What is most frequently used in React ? Controlled or Uncontrolled input.
+Controlled.
+
+    6.What do you need to write uncontrolled input?
+instead of writing an event handler for every state update, you can use a ref to get form values from the DOM.
+
+    7.Does state require to write uncontrolled input?
+No
+
+    8.When do you use uncontrolled input?
+Since an uncontrolled component keeps the source of truth in the DOM, it is sometimes easier to integrate React and non-React code when using uncontrolled components. 
+It can also be slightly less code if you want to be quick and dirty.
+
+    9.When do you use controlled input?
+you should usually use controlled components.
+
+    10.Do you use a controlled or uncontrolled input to validate form input fields?
+either will do.
+ 
