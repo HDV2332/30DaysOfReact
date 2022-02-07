@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import remyPuke from './images/remyPuke.png'
+// import remyPuke from './images/remyPuke.png'
 
 //seasons of the year
 

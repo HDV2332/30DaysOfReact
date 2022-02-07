@@ -53,4 +53,4 @@ The action or process of checking or proving the validity or accuracy of somethi
 onChange.
 
     15.What are event types do you use to validate an input?
-onSubmit.
+onBlur.

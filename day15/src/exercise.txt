@@ -1,0 +1,30 @@
+	1.What is a package?
+A package is a module that can be added to any program to add additional options, features, or functionality. A package can often be added to program using an "include" or "import" type of statement, or thourgh npm.
+
+	2.What is a third party package ?
+A reusable software component developed to be either freely distributed or sold by an entity other than the original vendor of the development platform.
+
+	3.Do you have to use third party packages?
+No.
+
+	4.How do you know the popularity and stability of a third party package?
+Check their Documentations and their Github repo stars numbers.
+
+	5.How many JavaScript packages are there on the npm registry?
+As of 4/2/2022, 1.865.859 packages are on the npm registry.
+
+	6.How do you install a third party package?
+Either npm or yarn to install packages. If you want to use yarn you have install it separately.
+Or through CDN.
+
+	7.What packages do you use most frequently?
+React.
+
+	8.What package do you use to fetch data?
+Axios.
+
+	9.What is the purpose of classnames package?
+For conditionally joining classNames together.
+
+	10.What is the pupose of validator package?
+Validates strings and sanitize them if necessary
