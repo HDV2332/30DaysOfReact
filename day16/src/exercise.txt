@@ -1,0 +1,8 @@
+    1.What is higher order function
+a function that takes another function as a parameter or return another function.
+
+    2.What is Higher Order Component
+a higher order component takes a component and return another component.
+  
+    3.A higher order component can allow us to enhance a component. (T or F)
+T

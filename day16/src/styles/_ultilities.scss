@@ -1,0 +1,17 @@
+.button-app{
+    margin-left: 5px;
+}
+.input-app {
+    margin-top: 20vh;
+    display: inline;
+
+    .input-group {
+        float: left;
+        width: 18.5%;
+        height: 15vh;
+        padding: 2px;
+        margin: 5px;
+        border: 2px solid cornflowerblue;
+        border-radius: 5px;
+    }
+}
