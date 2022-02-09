@@ -1,0 +1,12 @@
+    1.What package do you use to implement routing in react?
+react-router-dom.
+
+    2.What is the default export in react-router-dom?
+Route
+
+    3.What is the use of the following Components(Route, NavLink, Switch, Redirect, Prompt)
+Route: allows to navigate between components.
+NavLink: allow us to navigate each component. It takes a to required props.
+Switch: allows only on component to be rendered.
+Redirect: help us to redirect a route to a certain path based some condition.
+Prompt: prompt the user before navigating away from a page.

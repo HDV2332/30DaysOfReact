@@ -1,0 +1,91 @@
+.header-styles {
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.description-styles {
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.numberGen-app-styles {
+    padding: 0px 50px 50px 50px;
+    margin-bottom: 50px;
+}
+
+.population-app-styles {
+    font-family: "Consolas";
+    font-size: 20px;
+
+    .body-container-styles {
+        align-items: center;
+        text-align: center;
+        display: table;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .body-styles {
+        display: table-cell;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .numbar-styles {
+        width: 40%;
+        display: table-cell;
+        flex-direction: column;
+        margin: 5px;
+    }
+}
+
+.project-page{
+    h3{
+        margin-left: 10px;
+    }
+}
+
+.project-container {
+    align-items: center;
+    text-align: center;
+    display: table;
+    width: 100%;
+    color: black;
+}
+
+.project-showcase-section {
+    display: table-cell;
+    flex-direction: column;
+    width: 50%;
+}
+
+.side-menu {
+    display: table-cell;
+    flex-direction: column;
+    width: 15%;
+    padding: 10px 10px;
+
+    .side-wrapper {
+        border: 5px solid rgb(89, 122, 133);
+        justify-content: center;
+        padding: 5px;
+
+        h4{
+            margin: 5px;
+        }
+        a{
+            text-align: left;
+        }
+    }
+    .project-link {
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,57 @@
+.skills-row-styles {
+    display: inline;
+    flex-direction: inline;
+
+    .skills-styles {
+        width: fit-content;
+        background-color: #6abdcc;
+        color: white;
+        font-size: 20px;
+        margin: 7.5px 7.5px 15px 5px;
+        padding: 10px;
+        border-radius: 7.5px;
+        float: left;
+    }
+
+    h4 {
+        margin: 20px 0px;
+    }
+}
+
+.verified-user-styles {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-weight: bold;
+    margin: 15px 0px;
+    align-items: center;
+
+    .name-styles {
+        font-size: 25px;
+        margin-right: 15px;
+        float: left;
+    }
+}
+
+.user-info-container-styles {
+    display: flex;
+    flex-direction: column;
+
+    .extra-info-styles {
+        font-weight: light;
+    }
+}
+
+.about-wrapper-styles {
+    background-color: lightgray;
+    padding: 10px;
+
+    .about-styles {
+        padding: 10px;
+        align-items: left;
+        font-family: "Consolas";
+        border-radius: 10px;
+        margin: 10px;
+        background-color: white;
+    }
+}
