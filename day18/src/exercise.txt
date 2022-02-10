@@ -1,0 +1,28 @@
+    1.What is HTTP request?
+An HTTP request is made by a client, to a named host, which is located on a server. 
+The aim of the request is to access a resource on the server. 
+To make the request, the client uses components of a URL (Uniform Resource Locator), 
+which includes the information needed to access the resource.
+
+    2.What are the most common HTTP requests?
+GET and POST.
+
+    3.What is fetch?
+The Fetch API provides an interface for fetching resources (including across the network).
+
+    4.What is axios?
+Axios is a third party package and it is the most popular way to make HTTP requests(GET, POST, PUT, PATCH, DELETE).
+    
+    5.What is the difference between fetch and axios?
+- Fetch's body = Axios' data
+- Fetch's body has to be stringified, Axios' data contains the object
+- Fetch has no url in request object, Axios has url in request object
+- Fetch request function includes the url as parameter, Axios request function does not include 
+the url as parameter.
+- Fetch request is ok when response object contains the ok property, Axios request is ok 
+when status is 200 and statusText is 'OK'
+- To get the json object response: in fetch call the json() function on the response object, 
+in Axios get data property of the response object.
+
+    6.Do you prefer fetch to axios for make HTTP requests?
+axios
