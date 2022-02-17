@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import PopulationBody from './PopulationListComponent'
 import LanguageBody from './LanguageListComponent'
+import CountryDetails from './SearchBarComponents/CountryDetails'
 
 let getRandom = () => {
     return (Math.random() * 1000)
@@ -10,6 +11,9 @@ let getRandom = () => {
 const CountryList = () => {
     const [data, setData] = useState([])
     const [isLoading, setLoading] = useState(true);
+
+    const [search, setSearch] = useState('')
+    const [filteredCountries, setFilteredCountries] = useState([])
 
     useEffect(() => {
         getData()
@@ -27,6 +31,14 @@ const CountryList = () => {
                 console.log(error);
             })
     }
+
+    useEffect(() => {
+        setFilteredCountries(
+            data.filter(country => (
+                country.name.toLowerCase().includes(search.toLowerCase())
+            ))
+        )
+    }, [search, data])
 
     const sortCountry = (array) => {
         let arr1 = [{ name: 'World', population: 7693165599 }]
@@ -84,6 +96,25 @@ const CountryList = () => {
         }
         return arr
     }
+
+    //Search Bar
+    const SearchList = (data) => {
+        return (
+            <div className="search-list-wrapper">
+                {data.map(country => (
+                    <CountryDetails key={getRandom()} country={country} />
+                ))}
+            </div>
+        )
+    }
+
+    let criteria
+    if (filteredCountries.length === 250) {
+        criteria = <p></p>
+    } else {
+        criteria = <p>{filteredCountries.length} satified the search criteria.</p>
+    }
+
     // console.log(data);
     let render
     if (isLoading) {
@@ -97,8 +128,16 @@ const CountryList = () => {
         render = <div>
             <PopulationBody countries={sortCountry(data)} />
             <LanguageBody countries={sortLang(langData)} />
+            <h3>Countries List</h3>
+            <div className="search-input-wrapper">
+                <input type='text' placeholder='Search' onChange={(e) => setSearch(e.target.value)} />
+            </div>
+            {criteria}
+            {SearchList(filteredCountries)}
         </div>
     }
+
+
     return (
         <div>
             <div>
