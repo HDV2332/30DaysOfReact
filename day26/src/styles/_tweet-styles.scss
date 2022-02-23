@@ -1,0 +1,78 @@
+.tweet-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tweet-row {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+.tweet-text {
+    overflow-wrap: break-word;
+    width: 500px;
+    padding: 5px;
+}
+
+.username-tweet {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    strong,
+    small {
+        margin-left: 5px;
+    }
+}
+
+.tweet-options {
+    display: table;
+    width: 450px;
+    table-layout: fixed;
+    align-items: center;
+
+    .tweet-icons {
+        display: table-cell;
+        text-align: left;
+    }
+    .react-icons {
+        display: table-cell;
+        text-align: center;
+    }
+    .tweet-date {
+        display: table-cell;
+        text-align: right;
+    }
+
+    .edit-icon,
+    .delete-icon {
+        width: 23.5px;
+        height: 23.5px;
+        margin: 0px 5px;
+        cursor: pointer;
+    }
+
+    .comment-icon,
+    .heart-icon,
+    .retweet-icon {
+        margin: 0px 5px;
+        width: 21.5px;
+        height: 21.5px;
+        cursor: pointer;
+
+        :hover{
+            color: rgb(78, 196, 78);
+        }
+    }
+
+    .edit-icon:hover {
+        color: rgb(34, 177, 212);
+    }
+    .delete-icon:hover {
+        color: rgb(221, 41, 41);
+    }
+}
